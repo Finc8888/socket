@@ -1,14 +1,17 @@
 from socket import *
+import sys
 
 my_host = ''
-my_port = 80
+my_port = 10000
 
 s = socket(AF_INET, SOCK_STREAM)
 try:
 	s.bind((my_host, my_port))
 	print('Binding complite')
-except:
-	print('Binding is not complite')
+except error as msg:
+        print('Bind failed. Error Code : ', msg)
+        sys.exit()
+ 
 try:
 	s.listen(5)
 	print('Server redy to listen...')
