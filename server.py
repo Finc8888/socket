@@ -1,7 +1,7 @@
 from socket import *
 
 my_host = ''
-my_port = 8888
+my_port = 80
 
 s = socket(AF_INET, SOCK_STREAM)
 try:
