@@ -4,7 +4,7 @@ import sys
 server_host = 'localhost'
 server_port = 10001
 
-mes = b'Hello server!'
+mes = [b'Hello server!']
 
 if len(sys.argv) > 1:
 	server_host = sys.argv[1]
@@ -25,4 +25,5 @@ for line in mes:
 	data = s.recv(1024)
 	print('Client received:', data)
 s.close()
+
 

@@ -21,7 +21,7 @@ except:
 while True:
 	try:
 		conn, adress = s.accept()
-		print('Connecting by', adress[0], ':', adress[1])
+		print('Connecting by', adress)
 	except:
 		print('Connecting dont accept')
 	while True:
