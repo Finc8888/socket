@@ -2,7 +2,7 @@ from socket import *
 import sys
 
 server_host = '34.206.101.184'
-server_port = 80
+server_port = 10000
 
 mes = [b'Hello server!']
 
