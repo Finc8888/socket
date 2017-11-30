@@ -2,7 +2,7 @@ from socket import *
 import sys
 
 my_host = ''
-my_port = 10001
+my_port = 443
 
 s = socket(AF_INET, SOCK_STREAM)
 try:
